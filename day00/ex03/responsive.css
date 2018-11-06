@@ -1,0 +1,68 @@
+table {
+            width: 100%;
+            height: 100%;
+        }
+        .atom {
+            margin: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: auto;
+            width: auto;
+        }
+        .imag
+        {
+            position: absolute; 
+            width: 100%;
+            height: 100%;
+        }
+        td {
+            border-color: black;
+            position: relative;
+            border-width: 0px;
+            text-align: center;
+            height: 90px;
+            width: 90px;
+            border-style: solid;
+            font-weight: bold;
+        }
+
+        .clr {
+            border: none;
+        }
+        .number {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin: 0;
+            width: auto;
+            height: auto;
+        }
+        p {
+            margin: 0px;
+            font-size: 1vw;
+        }
+
+
+        .purpl {
+            background-color: #e3b5ff;
+            color: #41125e;
+            border: 5px solid #cb77ff;
+        }
+
+        .blue {
+            background-color: #2dc2ef;
+            color: #002733;
+            border: 5px solid #069fce;
+        }
+
+        .orang {
+            background-color: #ffda84;
+            color: #ff9000;
+            border: 5px solid #ffc642;
+        }
+        .green {
+            color: #176600;
+            border: 5px solid #59d635;
+            background-color: #93ff70;
+        }

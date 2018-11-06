@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #balloon {
+            background-color: red;
+            margin: auto;
+            margin-top: 300px;
+            display: block;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+<div id="balloon"></div>
+<script>
+    let index = 0;
+    let width = 200;
+    let height = 200;
+    let marginTop = 300;
+    let balloon = document.getElementById('balloon');
+    balloon.addEventListener("click", function () {
+        index += 1;
+        width = width + 10;
+        height = height + 10;
+        marginTop = marginTop - 5;
+        if (width >= 420) {
+            marginTop = 300;
+            width = 200;
+            height = 200;
+        }
+        document.getElementById('balloon').style.width = width + 'px';
+        document.getElementById('balloon').style.height = height + 'px';
+        document.getElementById('balloon').style.marginTop = marginTop + 'px';
+        if (index % 3 == 0) {
+            document.getElementById('balloon').style.backgroundColor = 'red';
+        }
+        if (index % 3 == 1) {
+            document.getElementById('balloon').style.backgroundColor = 'green';
+        }
+        if (index % 3 == 2) {
+            document.getElementById('balloon').style.backgroundColor = 'blue';
+        }
+    })
+    balloon.onmouseout  = handler;
+    function handler(event) {
+        if (width > 200) {
+            index += 1;
+
+            width = width - 10;
+            height = height - 10;
+            marginTop = marginTop + 5;
+            document.getElementById('balloon').style.width = width + 'px';
+            document.getElementById('balloon').style.height = height + 'px';
+            document.getElementById('balloon').style.marginTop = marginTop + 'px';
+            if (index % 3 == 0) {
+                document.getElementById('balloon').style.backgroundColor = 'red';
+            }
+            if (index % 3 == 1) {
+                document.getElementById('balloon').style.backgroundColor = 'green';
+            }
+            if (index % 3 == 2) {
+                document.getElementById('balloon').style.backgroundColor = 'blue';
+            }
+        }
+        else
+        {
+            marginTop = 300;
+            width = 200;
+            height = 200;
+            document.getElementById('balloon').style.width = width + 'px';
+            document.getElementById('balloon').style.height = height + 'px';
+            document.getElementById('balloon').style.marginTop = marginTop + 'px';
+        }
+    }
+</script>
+</body>
+</html>

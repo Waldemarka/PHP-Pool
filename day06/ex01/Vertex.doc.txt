@@ -1,0 +1,17 @@
+<- Vertex ----------------------------------------------------------------------
+
+This class for 3D vertexes.
+In this class 3 variables(coordinates)
+variable color from class color and 
+1 variable homogenous parameter(w).
+
+Default valus for contructed:
+'w' = 1.0
+'color' = rgb(255,255,255)(WHITE).
+
+Contructed name new Vertex, for example:
+new Vertex( array( 'x' => 1.0, 'y' => 0.0, 'z' => 0.0 ) );
+If w and color empty their  values default;
+
+Attribute in this class are private.
+---------------------------------------------------------------------- Vertex ->

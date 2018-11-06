@@ -1,0 +1,199 @@
+body{
+	background-color: #505050;
+	width: 100%;
+}
+.for_div{
+	width: 75%;
+	height: 80px;
+	background-color: #909090;
+	box-shadow: 6px 6px 5px;
+	border-radius: 5px;
+}
+.for_icon{
+	height: 80px;
+	width: 13px;
+	float: right;
+	margin-right: 5px;
+}
+.day{
+    height: 70px;
+    width: 30%;
+    margin-left: 5px;
+    margin-top: 2px;
+}
+.loupe{
+	height: 90px;
+	width: 150px;
+	float: right; 
+	margin-right: 0px;
+	margin-top: 3px;
+}
+.refresh{
+	width: 100%;
+	margin-top: 5px;		 
+}
+.close{
+	width: 100%;
+	margin-bottom: -40px;		 
+
+}
+.container{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+.big_div{
+	background-color: #505050;
+	margin-top: 11px;
+	width: 75%;
+	height: 580px;
+	display: flex;
+	justify-content: center;
+}
+
+.left_small_div{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 255px;
+	width: 83px;
+	margin-left: 0px;
+	background-color: #909090;
+	box-shadow: 6px 6px 5px;
+	border-radius: 5px;
+}
+.center_small_div{
+	margin-left: 20px;
+	margin-right: 20px;
+	height: 350px;
+	width: 610px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #909090;
+	box-shadow: 6px 6px 5px;
+	border-radius: 5px;
+}
+.right_small_div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 255px;
+	width: 83px;
+	background-color: #909090;
+	box-shadow: 6px 6px 5px;
+	border-radius: 5px;
+}
+.chyyt_chyyt_vlevo{
+	width: 43px;
+	height: 40px;
+	margin-left: -2px;
+}
+.for_border{
+	 border-radius: 3px;
+    border-style: solid;
+    border-color: red;
+    border-width: 2px;
+}
+.for_big_image{
+	width: 98%;
+	height: 96%
+}
+.for_book{
+	width: 43px;
+	height: 57px;
+	margin-top: 10px;
+}
+.for_ryshnik{
+	width: 43px;
+	height: 28px;
+	margin-top: 8px;
+	margin-bottom: 10px;
+}
+.last_div{
+	margin-left: 3px;
+	display: inline-block;
+	width: 76px;
+	height: 44px;
+}
+.brick{
+	width: 18px;
+	height: 22px;
+	margin-right: -4px;
+	margin-top: -4.1px;
+}
+.div_message
+{
+    position: relative;
+    margin-top: 2px;
+    background-color: rgba(165, 252, 150, 1.0);
+    width: 295px;
+    height: 85px;
+    bottom: 275px;
+    left: -293px;
+    line-height: 0.3;
+    font-family: italic;
+    padding: 10px;
+    letter-spacing: 0.5px;
+    box-shadow: 6px 6px 5px;
+	border-radius: 5px;
+}
+.it
+{
+    font-family: arial;
+    line-height: 0em;
+    font-style: italic;
+    font-size: 10.5px;
+}
+.time
+{
+    font-family: Times;
+    font-size: 22px;
+}
+.ar
+{
+   font-family: arial;
+    font-size: 10px;
+
+}
+.text_inp
+{
+   margin-left: 2px;
+   width: 220px;
+   border: 1px solid #9d969d;
+   border-bottom-color: #eeeeee;
+   border-right-color: #eeeeee;
+   height: 10px;
+}
+.btn
+{
+   border: 1px solid #a8a4a5;
+   border-radius: 1px;
+   background-color: #f4eff3;
+   background: #0079FF;
+   height: 12px;
+   width: 60px;
+   font-size: 8px;
+   letter-spacing: 1px;
+   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f4eff3), to(#dcdcdc));
+}
+.shadow
+{
+    text-shadow: 2px 2px 2px red;
+}
+.chair{
+	width: 80px;
+	height: 140px;
+	position: absolute;
+	margin-left: -400px; 
+
+}
+.mac{
+	width: 120px;
+	height: 120px;
+	position: absolute;
+	margin-left: -140px; 
+}

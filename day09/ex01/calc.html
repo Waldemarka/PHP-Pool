@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body style=" background-color: lightgray">
+<div  style=" margin-left: 35%; margin-top: 20% ">
+    <form onsubmit="calc(this)" action="">
+        <input id="numerator" type="text" style=" border: 2px solid lightslategray  ; background-color: aliceblue; width: 200px">
+        <div>
+            <select name="select" style="border: 2px solid lightslategray; margin-top: 5px; background-color: aliceblue;
+             background-color: aliceblue; width: 205px">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+                <option value="%">%</option>
+            </select>
+        </div>
+        <input id="denominator" type="text" style=" border: 2px solid lightslategray; margin-top: 5px; background-color: aliceblue; width: 140px">
+        <button id="submit" name="submit" value="OK">Try me!</button>
+    </form>
+    <script>
+        window.onload = function() {
+            setTimeout(yeah, 30000);
+        }
+        function yeah() {
+            alert('Please, use me...');
+            setTimeout(yeah, 30000);
+        }
+        function calc(form) {
+            let numerator = form.elements["numerator"].value;
+            let denominator = form.elements["denominator"].value;
+            let operator = form.elements["select"].value;
+            if (isInt(numerator) && isInt(denominator) &&
+                (parseInt(numerator, 10) >= 0) &&
+                (parseInt(denominator,10) >= 0))
+            {
+                numerator =  parseInt(numerator, 10);
+                denominator =  parseInt(denominator, 10);
+                if (operator == "+")
+                    output(numerator + denominator);
+                if (operator == "-")
+                    output(numerator - denominator);
+                if (operator == "*")
+                    output(numerator * denominator);
+                if (operator == "/"){
+                    if (denominator == 0)
+                        output('It\'s over 9000!');
+                    else
+                    output(numerator / denominator);
+                }
+                if (operator == "%") {
+                    if (denominator == 0)
+                        output('It\'s over 9000!');
+                    else
+                    output(numerator % denominator);
+                }
+            }
+            else
+                alert('Error :(');
+
+        }
+        function isInt(value) {
+            return (!isNaN(value) && parseInt(Number(value)) == value && !isNaN(parseInt(value, 10)));
+        }
+        function output(value) {
+            console.log(value);
+            alert(value);
+        }
+
+    </script>
+</div>
+</body>
+</html>

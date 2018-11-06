@@ -1,0 +1,18 @@
+<- Color ----------------------------------------------------------------------
+
+This class make operation with rgb color.
+
+The contruct convert INTEGER -> RGB or RGB to INTEGER
+exmple:
+INTEGER = new Color( array( 'red' => 255, 'green' => 255, 'blue' => 255 ) );
+RGB = new Color( array( 'rgb' => 12345 ) );
+
+The class can make operation wirh rgb:
+-add;
+-sub;
+-mult;
+for examle:
+Color   add( Color $col );
+Color   sub( Color $col );
+Color   mult( $koef );
+---------------------------------------------------------------------- Color ->
